@@ -4,51 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Collaborative Rewrite - Data Analytics & AI Expertise</title>
-
-    <!-- Google Fonts and Font Awesome -->
+    <title>Collaborative Rewrite - Data Analytics & BI Leader</title>
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- AOS CSS (for scroll animations) -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">
                 <h1>Collaborative Rewrite</h1>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section with Parallax -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Transforming Data into Insights</h1>
-            <p>Data Analytics & AI Expert | Innovating Business Intelligence</p>
-            <a href="#projects" class="cta-button">View My Work</a>
+            <p>Data Analytics & Business Intelligence Leader | Driving Strategic Innovation</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="hero-bg-animation">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about" class="about">
-        <div class="about-content" data-aos="fade-up">
-            <img src="assets/profile.jpg" alt="Profile Picture">
-            <h2>About Me</h2>
-            <p>With over 10 years of experience in business intelligence and data analytics, I specialize in building AI-driven solutions to optimize decision-making, drive collaboration, and elevate business outcomes.</p>
+        <div class="about-content">
+            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>As a Business Intelligence and Data Management Leader, I leverage data modeling, visualization, and analysis to drive strategic improvements and solve complex challenges. My expertise spans from optimizing backend processes using SQL and SSIS to enhancing front-end tools like Power BI for superior decision-making. I'm committed to building strong relationships and empowering teams to achieve greater efficiency and success.</p>
+                <p>Key Accomplishments:</p>
+                <ul>
+                    <li>Led the AR/AP consolidation project, integrating 5 ERP systems, resulting in a 50% reduction in reporting times and saving $40 million in interest payments.</li>
+                    <li>Established and directed an IT Leadership and Development Rotation (LADR) program, reducing recruitment costs and expanding the internal talent pool.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="about-stats">
+            <div class="stat" data-aos="fade-up">
+                <h3>10+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                <h3>50+</h3>
+                <p>Successful Projects</p>
+            </div>
+            <div class="stat" data-aos="fade-up" data-aos-delay="400">
+                <h3>15+</h3>
+                <p>Industries Served</p>
+            </div>
         </div>
     </section>
 
@@ -56,20 +87,47 @@
     <section id="expertise" class="expertise">
         <h2>My Expertise</h2>
         <div class="expertise-cards">
-            <div class="card" data-aos="fade-right">
+            <div class="card" data-aos="fade-up">
                 <i class="fas fa-chart-line"></i>
                 <h3>Data Analytics</h3>
-                <p>Transforming raw data into meaningful insights using advanced analytics tools and techniques.</p>
+                <p>Transforming data into actionable insights using PowerBI, SQL, and advanced analytics techniques.</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-robot"></i>
                 <h3>Artificial Intelligence</h3>
-                <p>Developing AI models to solve complex problems and drive intelligent decision-making.</p>
+                <p>Building AI solutions for automated analysis, predictive modeling, and enhancing business operations.</p>
             </div>
-            <div class="card" data-aos="fade-left" data-aos-delay="400">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
                 <i class="fas fa-cloud"></i>
                 <h3>Cloud Integration</h3>
-                <p>Leveraging cloud technology to build scalable and secure data solutions for businesses.</p>
+                <p>Leveraging cloud platforms like Azure to build scalable, efficient data solutions for enterprise-level systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="service-cards">
+            <div class="card" data-aos="fade-up">
+                <i class="fas fa-database"></i>
+                <h3>Business Intelligence Consulting</h3>
+                <p>Helping companies transform data into insights with tools like Power BI, SQL Server, and DAX.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-cloud"></i>
+                <h3>Azure Data Integration Solutions</h3>
+                <p>Expertise in Azure Data Factory, cloud migration, and building data lakes to streamline enterprise data management.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-brain"></i>
+                <h3>AI-Powered Data Analytics</h3>
+                <p>Developing predictive models and automated data analysis to provide strategic insights and optimize decision-making processes.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
+                <i class="fas fa-users"></i>
+                <h3>Team Leadership & Development</h3>
+                <p>Providing mentorship and leadership to cross-functional BI teams, from strategic direction to hands-on support.</p>
             </div>
         </div>
     </section>
@@ -78,18 +136,22 @@
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="project-cards">
-            <!-- Project 1: Automated Economic Analysis -->
             <div class="card" data-aos="zoom-in">
-                <img src="assets/economic-analysis.jpg" alt="Economic Analysis">
+                <img src="assets/economic-analysis.jpg" alt="Economic Analysis Project">
                 <h3>Automated Economic Analysis</h3>
-                <p>Live data visualization tool for real-time economic indicators, providing insights into GDP, inflation, and market trends.</p>
+                <p>Live data visualization tool for real-time economic indicators, providing actionable insights into economic trends.</p>
                 <a href="#" class="project-link">Learn More</a>
             </div>
-            <!-- Project 2: AI-Powered Dashboard -->
             <div class="card" data-aos="zoom-in" data-aos-delay="200">
-                <img src="assets/ai-dashboard.jpg" alt="AI Dashboard">
+                <img src="assets/ai-dashboard.jpg" alt="AI Dashboard Project">
                 <h3>AI-Powered Business Intelligence Dashboard</h3>
-                <p>A comprehensive dashboard using AI models to forecast business performance and visualize critical metrics.</p>
+                <p>An advanced dashboard using AI to forecast performance, visualize key metrics, and enhance strategic planning.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="assets/sop-hub.jpg" alt="Sales and Operations Planning Hub">
+                <h3>Sales and Operations Planning Hub</h3>
+                <p>A cross-departmental initiative providing a 5-year outlook, improving capacity planning, hiring strategies, and project management across the company.</p>
                 <a href="#" class="project-link">Learn More</a>
             </div>
         </div>
@@ -104,18 +166,24 @@
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <h3>Collaborative Rewrite</h3>
-            <p>Empowering innovation and data-driven decision making to achieve business success.</p>
+            <p>Empowering organizations through data-driven strategies and innovative business intelligence solutions.</p>
         </div>
-        <ul class="socials">
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <p>&copy; 2024 Collaborative Rewrite. All rights reserved.</p>
     </footer>
