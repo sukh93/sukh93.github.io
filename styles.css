@@ -11,6 +11,15 @@ body {
     color: #333;
 }
 
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
@@ -22,6 +31,8 @@ nav {
 
 .logo h1 {
     color: #fff;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -35,7 +46,6 @@ nav {
 
 .nav-links li a {
     color: #fff;
-    text-decoration: none;
     font-size: 16px;
 }
 
@@ -52,26 +62,43 @@ nav {
     align-items: center;
     color: #fff;
     text-align: center;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text readability */
+}
+
+.hero-content {
+    z-index: 2; /* Ensure content is on top of overlay */
 }
 
 .hero h1 {
     font-size: 56px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero p {
     font-size: 20px;
-    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-    margin-top: 20px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -87,14 +114,13 @@ nav {
 
 .about h2 {
     font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .about p {
     font-size: 18px;
-    margin-top: 20px;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /* Services Section */
@@ -118,11 +144,16 @@ nav {
 .card {
     background-color: #fff;
     padding: 20px;
-    margin: 20px;
+    margin: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex-basis: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card i {
@@ -172,18 +203,24 @@ nav {
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .contact-form button:hover {
     background-color: #0056b3;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     background-color: #333;
     color: #fff;
     padding: 40px 20px;
     text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .socials {
@@ -204,4 +241,30 @@ footer {
 
 .socials li a:hover {
     color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: 80%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
