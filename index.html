@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Collaborative Rewrite - Innovation at its Finest</title>
+    <title>Collaborative Rewrite - Data Analytics & AI Expertise</title>
     
     <!-- Google Fonts and Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,6 +12,9 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -24,7 +27,8 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -33,46 +37,68 @@
     <!-- Hero Section with Parallax -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Innovating Tomorrow, Today</h1>
-            <p>Collaborative solutions that shape the future of business.</p>
-            <a href="#services" class="cta-button">Explore Solutions</a>
+            <h1>Transforming Data into Insights</h1>
+            <p>Data Analytics & AI Expert | Innovating Business Intelligence</p>
+            <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
 
-    <!-- About Section with Glassmorphism -->
+    <!-- About Section -->
     <section id="about" class="about">
-        <div class="glass-container">
-            <h2>About Us</h2>
-            <p>We are a forward-thinking tech company focused on building solutions for the future. Our team is dedicated to creating innovative, scalable, and efficient software tailored to your needs.</p>
+        <div class="about-content" data-aos="fade-up">
+            <img src="assets/profile.jpg" alt="Profile Picture">
+            <h2>About Me</h2>
+            <p>With over 10 years of experience in business intelligence and data analytics, I specialize in building AI-driven solutions to optimize decision-making, drive collaboration, and elevate business outcomes.</p>
         </div>
     </section>
 
-    <!-- Services Section with Scroll-triggered Animations -->
-    <section id="services" class="services">
-        <h2>Our Expertise</h2>
-        <div class="service-cards">
-            <div class="card" data-aos="fade-up">
-                <i class="fas fa-code"></i>
-                <h3>Custom Development</h3>
-                <p>Building scalable, high-performance software tailored to your needs.</p>
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <h2>My Expertise</h2>
+        <div class="expertise-cards">
+            <div class="card" data-aos="fade-right">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analytics</h3>
+                <p>Transforming raw data into meaningful insights using advanced analytics tools and techniques.</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-robot"></i>
+                <h3>Artificial Intelligence</h3>
+                <p>Developing AI models to solve complex problems and drive intelligent decision-making.</p>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-delay="400">
                 <i class="fas fa-cloud"></i>
                 <h3>Cloud Integration</h3>
-                <p>Leverage the cloud to boost efficiency and flexibility in your operations.</p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="400">
-                <i class="fas fa-chart-line"></i>
-                <h3>Business Intelligence</h3>
-                <p>Data-driven solutions to elevate decision-making and strategic growth.</p>
+                <p>Leveraging cloud technology to build scalable and secure data solutions for businesses.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section with Interactivity -->
+    <!-- Project Showcase Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <!-- Project 1: Automated Economic Analysis -->
+            <div class="card" data-aos="zoom-in">
+                <img src="assets/economic-analysis.jpg" alt="Economic Analysis">
+                <h3>Automated Economic Analysis</h3>
+                <p>Live data visualization tool for real-time economic indicators, providing insights into GDP, inflation, and market trends.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+            <!-- Project 2: AI-Powered Dashboard -->
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/ai-dashboard.jpg" alt="AI Dashboard">
+                <h3>AI-Powered Business Intelligence Dashboard</h3>
+                <p>A comprehensive dashboard using AI models to forecast business performance and visualize critical metrics.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <form action="#" class="contact-form">
+        <h2>Get In Touch</h2>
+        <form action="#" class="contact-form" data-aos="fade-up">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -84,22 +110,26 @@
     <footer>
         <div class="footer-content">
             <h3>Collaborative Rewrite</h3>
-            <p>Shaping the future of collaboration with cutting-edge technology solutions.</p>
+            <p>Empowering innovation and data-driven decision making to achieve business success.</p>
         </div>
         <ul class="socials">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
         </ul>
         <p>&copy; 2024 Collaborative Rewrite. All rights reserved.</p>
     </footer>
 
-    <!-- Scroll-trigger Animation Script -->
+    <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1200,  // Animation duration
+            duration: 1200,
+            once: true
         });
     </script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>
