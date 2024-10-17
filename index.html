@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your Brand - Collaborative Rewrite</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Collaborative Rewrite - Innovation at its Finest</title>
+    
+    <!-- Google Fonts and Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- Navigation Bar -->
     <header>
         <nav>
             <div class="logo">
@@ -24,38 +30,38 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Parallax -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Innovating Tomorrow, Today</h1>
-            <p>Shaping a collaborative future through innovative technology solutions.</p>
-            <a href="#services" class="cta-button">Discover Our Solutions</a>
+            <p>Collaborative solutions that shape the future of business.</p>
+            <a href="#services" class="cta-button">Explore Solutions</a>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section with Glassmorphism -->
     <section id="about" class="about">
-        <div class="content">
+        <div class="glass-container">
             <h2>About Us</h2>
-            <p>We are a forward-thinking technology company committed to enhancing collaboration through cutting-edge innovations.</p>
+            <p>We are a forward-thinking tech company focused on building solutions for the future. Our team is dedicated to creating innovative, scalable, and efficient software tailored to your needs.</p>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section with Scroll-triggered Animations -->
     <section id="services" class="services">
         <h2>Our Expertise</h2>
         <div class="service-cards">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <i class="fas fa-code"></i>
                 <h3>Custom Development</h3>
                 <p>Building scalable, high-performance software tailored to your needs.</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-cloud"></i>
                 <h3>Cloud Integration</h3>
                 <p>Leverage the cloud to boost efficiency and flexibility in your operations.</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
                 <i class="fas fa-chart-line"></i>
                 <h3>Business Intelligence</h3>
                 <p>Data-driven solutions to elevate decision-making and strategic growth.</p>
@@ -63,9 +69,9 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Interactivity -->
     <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
+        <h2>Get in Touch</h2>
         <form action="#" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -74,11 +80,11 @@
         </form>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <h3>Collaborative Rewrite</h3>
-            <p>Empowering innovation, driving collaboration, and delivering success in every project.</p>
+            <p>Shaping the future of collaboration with cutting-edge technology solutions.</p>
         </div>
         <ul class="socials">
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -88,6 +94,12 @@
         <p>&copy; 2024 Collaborative Rewrite. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scroll-trigger Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,  // Animation duration
+        });
+    </script>
 </body>
 </html>
